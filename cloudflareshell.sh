@@ -18,17 +18,7 @@ example:
   exit
 fi
 
-function pp () {
-cfkey=2bas9ba5d9je483d50ke7cacd497bf6246e6b
-email='email@yourdomain.com'
-zone='yourdomain.com'
-}
-
-function jj () {
-cfkey=gbkb648d1afkea39e2d94v87b2605a6bnd87e
-email='workemail@yourjobdomain.com'
-zone='yourjobdomain.com'
-}
+. credentials
 
 function domain_records() {
 curl -k https://www.cloudflare.com/api_json.html \
